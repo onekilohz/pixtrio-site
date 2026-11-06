@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>支持 — Pixtrio</title>
+<meta name="description" content="Pixtrio 支持页：联系方式、系统要求、常见问题。支持 JPG、PNG、GIF、WebP、AVIF、BMP、HEIC、TIFF 八类图片输入，输出 AVIF、JPEG、WebP、PNG 或保持原格式。">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0d12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="alternate" hreflang="zh-CN" href="https://onekilohz.github.io/pixtrio-site/support.html">
+<link rel="alternate" hreflang="en" href="https://onekilohz.github.io/pixtrio-site/en/support.html">
+<link rel="alternate" hreflang="x-default" href="https://onekilohz.github.io/pixtrio-site/support.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-64.png" alt="" width="28" height="28">
+      <span>Pixtrio</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html">产品</a>
+      <a href="privacy.html">隐私</a>
+      <a href="support.html" aria-current="page">支持</a>
+      <a class="lang" href="en/support.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Pixtrio 支持</h1>
+      <p class="meta">遇到问题、有建议，或者只是想确认某个行为是不是设计如此，写信给我们。</p>
+    </div>
+
+    <div class="contact-box contact-top">
+      <p>支持与反馈</p>
+      <p class="mail"><a class="btn-mail" href="mailto:42_raisins.finer@icloud.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.2l8.5 6 8.5-6"/></svg>发送邮件给支持</a></p>
+    </div>
+
+    <div class="prose">
+      <h2 id="requirements">系统要求</h2>
+      <ul>
+        <li>macOS 14.0 或更高版本</li>
+        <li>Universal 构建：Apple 芯片（Apple silicon）与 Intel Mac 都能运行</li>
+      </ul>
+
+      <h2 id="start">快速上手</h2>
+      <ol class="steps">
+        <li>把图片或整个文件夹拖进窗口（也可以用 ⌘O 添加）</li>
+        <li>在左侧选输出格式和画质，需要时再限制尺寸</li>
+        <li>按 ⌘↩ 开始压缩；结果默认写在原图旁边，列表每行都会显示变化</li>
+      </ol>
+    </div>
+
+    <h2 class="faq-title" id="faq">常见问题</h2>
+    <div class="faq">
+      <details>
+        <summary>支持哪些图片格式？</summary>
+        <p>读得进 8 类：JPG、PNG（含 APNG）、GIF、WebP、AVIF、BMP、HEIC/HEIF、TIFF，对应 13 个扩展名（jpg、jpeg、png、apng、gif、webp、avif、avifs、bmp、heic、heif、tif、tiff）。</p>
+        <p>写得出 5 个选项：原格式、AVIF、JPEG、WebP、PNG。选「原格式」时，每张图按它自己的容器选编码器。</p>
+      </details>
+      <details>
+        <summary>我的图片会被上传吗？</summary>
+        <p>不会。Pixtrio 没有申请网络权限，所有处理都在你的 Mac 本机完成。详见<a href="privacy.html">隐私政策</a>。</p>
+      </details>
+      <details>
+        <summary>为什么有的图压完没有变小？</summary>
+        <p>默认情况下，如果结果不比原图小，Pixtrio 就保留原图、丢掉结果，列表里显示「无需优化」。这是为了避免产出「越压越大」的文件。</p>
+        <p>如果你确实需要保留变大的结果（比如为了统一格式），可以在左侧「高级」里打开「保留无收益结果」。</p>
+      </details>
+      <details>
+        <summary>打开了「替换原文件」，后悔了怎么恢复？</summary>
+        <p>本次会话内，底栏的「恢复原图」可以把整批恢复成原图，原图是在替换前先复制到本机缓存的。</p>
+        <p>需要注意的是：退出应用或关闭窗口后，缓存的副本会被清空，原图就找不回来了。Pixtrio 不把它当备份用。</p>
+        <p>默认状态下「替换原文件」是关闭的，结果会写在原图旁边，原图不动。</p>
+      </details>
+      <details>
+        <summary>输出的文件在哪？叫什么名字？</summary>
+        <p>默认写在原图所在的位置，文件名会带一段参数后缀，例如 <code>-q55-h5000</code>（画质 55、高度限制 5000）；纯 PNG 优化时后缀是 <code>-min</code>。重名时会自动加编号，不会覆盖你的原图。</p>
+        <p>也可以在左侧「输出路径」里改成固定目录。</p>
+      </details>
+      <details>
+        <summary>ICC 和 EXIF 会被保留吗？</summary>
+        <p>默认不写入 ICC 描述文件和 EXIF 信息，以节省体积。需要保留时，在左侧「高级」里打开对应的开关即可。</p>
+      </details>
+      <details>
+        <summary>动图会被压成一张静图吗？</summary>
+        <p>把动图输出成 AVIF、WebP，或者保持原格式时，会保留全部帧、每帧延时和循环次数。</p>
+        <p>如果你明确选了 JPEG 输出，JPEG 不支持动画，结果只保留首帧——列表会在开始压缩前提示这一点。</p>
+      </details>
+      <details>
+        <summary>尺寸限制会把图片放大吗？</summary>
+        <p>不会。宽高限制只缩小、不放大，上限 32768 px。宽和高可以单独设置，也可以同时设置。</p>
+      </details>
+      <details>
+        <summary>界面支持哪些语言？</summary>
+        <p>11 种。深色和浅色外观跟随系统，也可以手动切换。</p>
+      </details>
+      <details>
+        <summary>怎么反馈一个 bug？</summary>
+        <p>点击下面的按钮写信给我们，请尽量附上：</p>
+        <p><a class="btn-mail" href="mailto:42_raisins.finer@icloud.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.2l8.5 6 8.5-6"/></svg>发送邮件给支持</a></p>
+        <pre><code>macOS 版本（例如 macOS 14.6）
+Mac 芯片（Apple 芯片 / Intel）
+输入图片的格式、大概尺寸和体积
+你做了什么、期望得到什么、实际发生了什么
+如果方便，附一张截图</code></pre>
+        <p>如果问题与某张图有关，用一张能复现问题的最小测试图就够，<strong>不用把你的原图发过来</strong>。</p>
+      </details>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Pixtrio · <a href="privacy.html">隐私政策</a> · <a href="support.html" aria-current="page">支持</a> · <a class="lang" href="en/support.html" hreflang="en" lang="en">English</a></p>
+    <p>© 2026 Pixtrio. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

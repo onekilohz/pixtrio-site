@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — Pixtrio</title>
+<meta name="description" content="Pixtrio 的隐私政策：不收集任何数据，所有图片处理都在你的 Mac 本机完成，应用没有网络权限。">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0d12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="alternate" hreflang="zh-CN" href="https://onekilohz.github.io/pixtrio-site/privacy.html">
+<link rel="alternate" hreflang="en" href="https://onekilohz.github.io/pixtrio-site/en/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://onekilohz.github.io/pixtrio-site/privacy.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-64.png" alt="" width="28" height="28">
+      <span>Pixtrio</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="index.html">产品</a>
+      <a href="privacy.html" aria-current="page">隐私</a>
+      <a href="support.html">支持</a>
+      <a class="lang" href="en/privacy.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Pixtrio 隐私政策</h1>
+      <p class="meta">生效日期：2026-11-06<br>适用于：Pixtrio for macOS（1.0 及后续版本）</p>
+    </div>
+
+    <div class="policy-summary">
+      <strong>一句话：</strong>Pixtrio 不收集你的任何数据。所有图片处理都在你的 Mac 上完成，应用没有网络权限，图片不会离开这台电脑。
+    </div>
+
+    <div class="prose">
+      <h2 id="collect">1. 我们收集哪些数据</h2>
+      <p><strong>不收集。</strong></p>
+      <p>Pixtrio 没有账号系统，不需要注册或登录。我们不收集姓名、邮箱、电话号码、通信地址、设备标识符、位置信息、使用行为或任何统计信息，也不收集你处理的图片内容。</p>
+
+      <h2 id="how">2. 我们如何收集这些数据</h2>
+      <p><strong>不收，也就没有收集方式。</strong></p>
+      <p>应用内不包含分析 SDK、崩溃上报 SDK、广告 SDK 或任何第三方跟踪代码；安装包内没有任何会向外发送数据的组件。</p>
+
+      <h2 id="purpose">3. 这些数据的用途</h2>
+      <p><strong>因为不收集数据，所以不存在任何用途。</strong></p>
+      <p>你对图片做的一切操作——读取、压缩、换格式、限制尺寸、写回文件——都只发生在你的 Mac 上。</p>
+
+      <h2 id="share">4. 是否与第三方共享</h2>
+      <p><strong>不共享。</strong></p>
+      <p>Pixtrio 在 App Sandbox 中没有申请任何网络权限（没有任何 <code>com.apple.security.network.*</code> 权限），因此技术上无法把你的文件或数据发送到任何服务器，包括我们自己的服务器。</p>
+      <p>有两点需要如实说明，它们都不是 Pixtrio 在收集数据：</p>
+      <ul>
+        <li><strong>购买与下载由 Apple 处理。</strong>你在 Mac App Store 的购买、下载、退款流程由 Apple 负责，适用 <a href="https://www.apple.com/legal/privacy/">Apple 的隐私政策</a>。我们只能看到 Apple 提供的销售汇总报表，其中不含任何购买者身份信息。</li>
+        <li><strong>系统级分析由你决定。</strong>如果你在 macOS 的「系统设置 → 隐私与安全性 → 分析与改进」里开启了「与 App 开发者共享分析」，Apple 可能向我们提供系统级的崩溃与使用统计。这类数据的采集、去标识与传输由 Apple 负责，你可以随时在上述设置里关闭。</li>
+      </ul>
+
+      <h2 id="retain">5. 数据保留与删除</h2>
+      <p><strong>我们不保留任何数据，因为没有数据可保留。</strong></p>
+      <p>不过在<strong>你自己的 Mac 上</strong>，Pixtrio 会产生下面几类本地文件。它们从不离开这台电脑，删除方式也写在每一项里：</p>
+      <table>
+        <thead>
+          <tr><th>本地数据</th><th>位置</th><th>何时删除</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="本地数据">你处理的图片与输出结果</td>
+            <td data-label="位置">你选择的位置（默认与原图相同）</td>
+            <td data-label="何时删除">由你自己管理。Pixtrio 不会在你没要求的情况下删除它们</td>
+          </tr>
+          <tr>
+            <td data-label="本地数据">「替换原文件」时的原图副本</td>
+            <td data-label="位置"><code>~/Library/Caches/Pixtrio/Originals/</code></td>
+            <td data-label="何时删除">应用启动时会清空上次的残留；<strong>关闭窗口或退出应用时清空</strong>。它不是备份——退出应用后无法再恢复原图</td>
+          </tr>
+          <tr>
+            <td data-label="本地数据">偏好设置：外观模式、你授权过的文件夹书签（最多 12 个）</td>
+            <td data-label="位置"><code>~/Library/Preferences/</code> 下应用的偏好文件</td>
+            <td data-label="何时删除">卸载应用后按系统规则回收；也可手动删除</td>
+          </tr>
+          <tr>
+            <td data-label="本地数据">列表缩略图缓存</td>
+            <td data-label="位置">只在内存里</td>
+            <td data-label="何时删除">退出应用即释放，不落盘</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>如果你想立刻清干净：退出 Pixtrio，删除 <code>~/Library/Caches/Pixtrio/</code> 与 <code>~/Library/Preferences/</code> 下与应用相关的偏好文件，再删除应用本身即可。</p>
+
+      <h2 id="withdraw">6. 你的权利：撤回同意、删除数据、注销账号</h2>
+      <ul>
+        <li><strong>注销账号</strong>：没有账号，无需注销。</li>
+        <li><strong>撤回同意</strong>：我们没有收集数据，因此没有需要撤回的数据同意。撤回某一项系统授权时，去「系统设置 → 隐私与安全性 → 文件与文件夹」关掉 Pixtrio 的访问权限即可；应用会在下次需要时通过系统文件面板重新询问。</li>
+        <li><strong>删除数据</strong>：Pixtrio 不持有你的数据。本机上的副本与偏好按第 5 节的方法删除即可。</li>
+        <li><strong>其他隐私问题</strong>：用第 9 节的「通过邮件联系我们」按钮写信给我们，我们会在合理时间内答复。</li>
+      </ul>
+
+      <h2 id="children">7. 儿童</h2>
+      <p>Pixtrio 不收集任何人的数据，包括儿童。App Store 年龄分级为 4+。</p>
+
+      <h2 id="changes">8. 本政策的变更</h2>
+      <p>如果本政策发生变化，我们会更新本页顶部的生效日期，重大变更会在页面顶部单独说明。由于 Pixtrio 不收集数据，我们预计不会发生实质性变更。</p>
+
+      <h2 id="contact">9. 联系我们</h2>
+      <p><a class="btn-mail" href="mailto:42_raisins.finer@icloud.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.2l8.5 6 8.5-6"/></svg>通过邮件联系我们</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Pixtrio · <a href="privacy.html" aria-current="page">隐私政策</a> · <a href="support.html">支持</a> · <a class="lang" href="en/privacy.html" hreflang="en" lang="en">English</a></p>
+    <p>© 2026 Pixtrio. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixtrio — Native batch image compression for the Mac</title>
+<meta name="description" content="Pixtrio is a native batch image compressor for macOS. Drop in images or a whole folder, choose an output format and quality, press one button, and the batch gets smaller next to the originals. Everything runs on your Mac: no network access, no account, no subscription.">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0d12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="https://onekilohz.github.io/pixtrio-site/en/index.html">
+<link rel="alternate" hreflang="zh-CN" href="https://onekilohz.github.io/pixtrio-site/index.html">
+<link rel="alternate" hreflang="x-default" href="https://onekilohz.github.io/pixtrio-site/index.html">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="../assets/icon-64.png" alt="" width="28" height="28">
+      <span>Pixtrio</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Product</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a class="lang" href="../index.html" hreflang="zh-CN" lang="zh-CN">中文</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-inner">
+        <img class="hero-icon" src="../assets/icon-256.png" alt="Pixtrio app icon" width="92" height="92">
+        <h1>Pixtrio</h1>
+        <p class="subtitle">A native batch image compressor for the Mac.</p>
+        <p class="lede">Drop in images, or a whole folder. Choose an output format and quality, press one button, and the batch gets smaller next to the originals.<br>Everything runs on your Mac.</p>
+        <div class="grab">
+          <!-- TODO: once live, replace this span with <a class="btn btn-primary" href="{{APP_STORE_LINK}}">Get it on the Mac App Store</a> -->
+          <span class="btn btn-primary" role="button" aria-disabled="true">Coming soon</span>
+          <a class="btn btn-ghost" href="support.html">See what it does</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section showcase">
+    <div class="wrap">
+      <figure class="window-figure">
+        <img src="../assets/app-window-en.webp" alt="Pixtrio main window" width="1600" height="1038">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Why Pixtrio</h2>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2.5"/><path d="M7 13l3-3 3 3 2-2 2 2"/><path d="M8 21h8"/></svg>
+          </span>
+          <h3>Native, not a wrapper</h3>
+          <p>Built with SwiftUI as a universal binary, so it runs natively on Apple silicon and Intel Macs alike. macOS 14 or later, eleven interface languages, and light and dark following the system.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <h3>Fully offline</h3>
+          <p>Pixtrio requests no network entitlement at all. Nothing is uploaded, no account is needed, and there is no telemetry. Your images are read, compressed and written back only where you point it.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 9h12"/><path d="M6 15h12"/></svg>
+          </span>
+          <h3>Buy it once</h3>
+          <p>Pay once and you're done. No in-app purchases, no subscription, no ads.</p>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="8" height="14" rx="2"/><rect x="13" y="5" width="8" height="8" rx="2"/><path d="M13 17h8"/></svg>
+          </span>
+          <h3>A batch, not a file</h3>
+          <p>Drop in images or an entire folder, and subfolders are scanned for you. One row per image puts format, dimensions, size and time on the same line, and only the columns that actually changed get an arrow.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What it does</h2>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Reads eight families: JPG, PNG (including APNG), GIF, WebP, AVIF, BMP, HEIC/HEIF and TIFF</h3>
+        </article>
+        <article class="card">
+          <h3>Writes five output options: Original, AVIF, JPEG, WebP or PNG</h3>
+        </article>
+        <article class="card">
+          <h3>By default, a result that isn't smaller keeps the original</h3>
+        </article>
+        <article class="card">
+          <h3>Replace original still leaves a way back: within the current session, restore the whole batch in one click</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Why it exists</h2>
+        <p>Most tools either ship your images to a server, or spread the settings across three dialogs. Pixtrio does two things: it takes a whole batch in one go, and it lets you see what changed at a glance.</p>
+      </div>
+      <div class="grab">
+        <span class="btn btn-primary" role="button" aria-disabled="true">Coming soon</span>
+        <a class="btn btn-ghost" href="privacy.html">Privacy Policy</a>
+        <a class="btn btn-ghost" href="support.html">Get support</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Pixtrio · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a> · <a class="lang" href="../index.html" hreflang="zh-CN" lang="zh-CN">中文</a></p>
+    <p>© 2026 Pixtrio. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Pixtrio</title>
+<meta name="description" content="Pixtrio's privacy policy: no data is collected. Every image is processed on your Mac, and the app has no network access.">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0d12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="https://onekilohz.github.io/pixtrio-site/en/privacy.html">
+<link rel="alternate" hreflang="zh-CN" href="https://onekilohz.github.io/pixtrio-site/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://onekilohz.github.io/pixtrio-site/privacy.html">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="../assets/icon-64.png" alt="" width="28" height="28">
+      <span>Pixtrio</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Product</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="support.html">Support</a>
+      <a class="lang" href="../privacy.html" hreflang="zh-CN" lang="zh-CN">中文</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Pixtrio Privacy Policy</h1>
+      <p class="meta">Effective date: 2026-11-06<br>Applies to: Pixtrio for macOS (1.0 and later)</p>
+    </div>
+
+    <div class="policy-summary">
+      <strong>In one line:</strong> Pixtrio collects no data about you. Every image is processed on your Mac, the app has no network access, and your images never leave the machine.
+    </div>
+
+    <div class="prose">
+      <h2 id="collect">1. What data we collect</h2>
+      <p><strong>None.</strong></p>
+      <p>Pixtrio has no account system and does not ask you to sign up or log in. We do not collect your name, email address, phone number, postal address, device identifiers, location, usage data or any analytics, and we do not collect the images you process.</p>
+
+      <h2 id="how">2. How we collect that data</h2>
+      <p><strong>We don't, so there is no collection mechanism.</strong></p>
+      <p>The app contains no analytics SDK, no crash-reporting SDK, no advertising SDK and no third-party tracking code. Nothing in the bundle sends data anywhere.</p>
+
+      <h2 id="purpose">3. What that data is used for</h2>
+      <p><strong>Since no data is collected, there is nothing to use it for.</strong></p>
+      <p>Everything you do to an image — reading it, compressing it, converting its format, limiting its dimensions, writing it back — happens only on your Mac.</p>
+
+      <h2 id="share">4. Whether we share it with third parties</h2>
+      <p><strong>We don't.</strong></p>
+      <p>Pixtrio requests no network entitlement in the App Sandbox (there is no <code>com.apple.security.network.*</code> entitlement), so it cannot send your files or your data to any server, including ours.</p>
+      <p>Two things worth stating plainly. Neither of them is Pixtrio collecting data:</p>
+      <ul>
+        <li><strong>Purchases and downloads are handled by Apple.</strong> Buying, downloading and refunding through the Mac App Store is Apple's process and is covered by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. All we see are Apple's aggregate sales reports, which contain no information about who bought the app.</li>
+        <li><strong>System-level analytics are your choice.</strong> If you turn on "Share analytics with app developers" in System Settings → Privacy &amp; Security → Analytics &amp; Improvements, Apple may provide us with system-level crash and usage statistics. Apple collects, de-identifies and transmits that data, and you can turn it off in the same place.</li>
+      </ul>
+
+      <h2 id="retain">5. Retention and deletion</h2>
+      <p><strong>We retain nothing, because there is nothing to retain.</strong></p>
+      <p>On <strong>your own Mac</strong>, however, Pixtrio produces the local files below. They never leave the machine, and each row explains how to delete them:</p>
+      <table>
+        <thead>
+          <tr><th>Local data</th><th>Location</th><th>When it is deleted</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Local data">The images and outputs you process</td>
+            <td data-label="Location">Wherever you choose (next to each original by default)</td>
+            <td data-label="When it is deleted">Yours to manage. Pixtrio does not delete them unless you ask it to</td>
+          </tr>
+          <tr>
+            <td data-label="Local data">Copies of originals made by "Replace original"</td>
+            <td data-label="Location"><code>~/Library/Caches/Pixtrio/Originals/</code></td>
+            <td data-label="When it is deleted">Wiped at launch; <strong>cleared when the window closes or the app quits</strong>. This is not a backup — once the app quits, the originals cannot be recovered</td>
+          </tr>
+          <tr>
+            <td data-label="Local data">Preferences: appearance mode, plus bookmarks for folders you granted (up to 12)</td>
+            <td data-label="Location">The app's preferences file under <code>~/Library/Preferences/</code></td>
+            <td data-label="When it is deleted">Reclaimed by the system after you uninstall; you can also delete it manually</td>
+          </tr>
+          <tr>
+            <td data-label="Local data">List thumbnails</td>
+            <td data-label="Location">In memory only</td>
+            <td data-label="When it is deleted">Released when the app quits; never written to disk</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>To wipe everything immediately: quit Pixtrio, delete <code>~/Library/Caches/Pixtrio/</code> and the app's preferences file under <code>~/Library/Preferences/</code>, then delete the app itself.</p>
+
+      <h2 id="withdraw">6. Your rights: withdrawing consent, deleting data, closing your account</h2>
+      <ul>
+        <li><strong>Closing your account:</strong> there is no account, so there is nothing to close.</li>
+        <li><strong>Withdrawing consent:</strong> we collect no data, so there is no data consent to withdraw. To revoke a system permission, turn off Pixtrio's access in System Settings → Privacy &amp; Security → Files and Folders. The app will ask again through the system file panel the next time it needs access.</li>
+        <li><strong>Deleting data:</strong> Pixtrio holds none of your data. The local copies and preferences can be removed with the steps in section 5.</li>
+        <li><strong>Other privacy questions:</strong> use the “Contact us by email” button in section 9 and we will reply within a reasonable time.</li>
+      </ul>
+
+      <h2 id="children">7. Children</h2>
+      <p>Pixtrio collects no one's data, children's included. The App Store age rating is 4+.</p>
+
+      <h2 id="changes">8. Changes to this policy</h2>
+      <p>If this policy changes, we will update the effective date at the top of this page and note any material change there. Because Pixtrio collects no data, we do not expect material changes.</p>
+
+      <h2 id="contact">9. Contact</h2>
+      <p><a class="btn-mail" href="mailto:42_raisins.finer@icloud.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.2l8.5 6 8.5-6"/></svg>Contact us by email</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Pixtrio · <a href="privacy.html" aria-current="page">Privacy</a> · <a href="support.html">Support</a> · <a class="lang" href="../privacy.html" hreflang="zh-CN" lang="zh-CN">中文</a></p>
+    <p>© 2026 Pixtrio. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
